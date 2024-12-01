@@ -39,7 +39,7 @@ function BigScreenNavigationItemDropdown({ title, sublinks }) {
             </HoverCardTrigger>
             <HoverCardContent className="bg-[--primary] text-white border-none rounded-none" >
                 <ul>
-                    {children.map((child, index) => (
+                    {sublinks.map((child, index) => (
                         <li key={index} className='hover:text-[--link] p-2'>
                             <Link href={child.href}>
                                 <span className="block cursor-pointer">{child.title}</span>
