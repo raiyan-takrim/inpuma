@@ -27,7 +27,7 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 
-function BigScreenNavigationItemDropdown({ title, children }) {
+function BigScreenNavigationItemDropdown({ title, sublinks }) {
     return (
         <HoverCard className="bg-[--primary]" openDelay={100} closeDelay={100} >
             <HoverCardTrigger className='flex gap-1 place-items-center text-sm' >
@@ -121,7 +121,7 @@ const BigScreenMenuBar = () => {
                 {navlinks.map((navlink, index) => (
                     <li key={index} className='p-4 hover:text-[--link]'>
                         {navlink.children.length > 0 ? (
-                            <BigScreenNavigationItemDropdown title={navlink.title} children={navlink.children} />
+                            <BigScreenNavigationItemDropdown title={navlink.title} sublinks={navlink.children} />
                         ) : (
                             <div className='text-sm'>
                                 <Link href={navlink.href}>
