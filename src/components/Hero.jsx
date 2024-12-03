@@ -3,11 +3,11 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 const images = [
-    'https://via.placeholder.com/1200x400?text=Image+1',
-    'https://via.placeholder.com/1200x400?text=Image+2',
-    'https://via.placeholder.com/1200x400?text=Image+3',
-    'https://via.placeholder.com/1200x400?text=Image+4',
-    'https://via.placeholder.com/1200x400?text=Image+5',
+    'https://picsum.photos/1200/400?random=1&blur=2',
+    'https://picsum.photos/1200/400?random=2&blur=2',
+    'https://picsum.photos/1200/400?random=3&blur=2',
+    'https://picsum.photos/1200/400?random=4&blur=2',
+    'https://picsum.photos/1200/400?random=5&blur=2',
 ];
 
 const Hero = () => {
