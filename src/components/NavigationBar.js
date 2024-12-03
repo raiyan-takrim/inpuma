@@ -1,7 +1,5 @@
 'use client';
-
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
 import { navlinks } from '@/utils/navlinks';
 import {
