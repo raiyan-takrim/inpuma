@@ -1,0 +1,36 @@
+.events-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+}
+
+.event-details {
+  padding: 10px;
+}
+
+.event-details h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.event-details p {
+  margin: 5px 0;
+}
+
+.event-details a {
+  color: #007bff;
+  text-decoration: none;
+}

@@ -1,0 +1,21 @@
+/* swiper-custom.css */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--link);
+  color: white;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+  color: var(--muted);
+}
+.swiper-pagination-bullet {
+  background-color: var(--link);
+}
+/* .swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--hover);
+} */

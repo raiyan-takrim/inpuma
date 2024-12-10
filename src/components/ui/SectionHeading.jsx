@@ -1,8 +1,18 @@
-import { cn } from '@/lib/utils'
-import React from 'react'
+import { cn } from '@/lib/utils';
+import React from 'react';
 
-export default function SectionHeading({ children = "Section Heading", className }) {
-    return (
-        <h1 className={cn("uppercase relative inline-block after:rounded-full text-3xl font-bold after:absolute after:-bottom-2 after:left-0 after:w-full after:h-1 after:bg-[--link] mb-10", className)}>{children}</h1>
-    )
+export default function SectionHeading({
+  children = 'Section Heading',
+  className,
+}) {
+  return (
+    <h1
+      className={cn(
+        'relative mb-10 inline-block text-3xl font-bold uppercase after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-full after:rounded-full after:bg-[--link]',
+        className
+      )}
+    >
+      {children}
+    </h1>
+  );
 }

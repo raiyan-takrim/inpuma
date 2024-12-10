@@ -24,15 +24,14 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
+import { HiOutlineChevronDown, HiOutlineMagnifyingGlass } from 'react-icons/hi2';
 
 function BigScreenNavigationItemDropdown({ title, sublinks }) {
     return (
         <HoverCard className="bg-[--primary]" openDelay={100} closeDelay={100} >
             <HoverCardTrigger className='flex gap-1 place-items-center text-sm' >
                 <span className="block cursor-pointer">{title}</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
+                <HiOutlineChevronDown className="size-4" />
 
             </HoverCardTrigger>
             <HoverCardContent className="bg-[--primary] text-white border-none rounded-none" >
@@ -137,12 +136,10 @@ const BigScreenMenuBar = () => {
 
 const SearchBar = ({ className }) => {
     return (
-        <div className={cn("p-4 bg-[--link] ml-auto grid place-items-center", className)}>
+        <div className={cn("p-4 bg-[--link] hover:bg-[--hover] ml-auto grid place-items-center", className)}>
             <Dialog>
                 <DialogTrigger>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                    </svg>
+                    <HiOutlineMagnifyingGlass className="size-6" />
                 </DialogTrigger>
                 <DialogContent>
                     <DialogHeader>
@@ -171,7 +168,7 @@ const SearchBar = ({ className }) => {
 
 const NavigationBar = () => {
     return (
-        <nav className='bg-[--primary] p-4 md:p-0'>
+        <nav className='bg-[--primary] p-4 md:p-0 sticky top-0 z-50'>
             <MobileMenuBar />
             <BigScreenMenuBar />
         </nav>
